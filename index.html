@@ -594,11 +594,6 @@
 <p>This is the demonstration page of SE-MelGAN - Multi-Speaker Language Agnostic Rapid Speech Enhancement</p>
 <p>Github: <a href="https://github.com/">https://github.com/</a></p>
 <h2 id="audio-samples-english">Audio samples (English)</h2>
-<p>Here is the comparison in the analysis-synthesis condition using <a href="https://keithito.com/LJ-Speech-Dataset/">LJSpeech dataset</a>.<br>
-Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram calculation.</p>
-<ul>
-<li><strong>Groundtruth</strong>: Target speech.</li>
-</ul>
 <table>
 <thead>
 <tr>
@@ -609,23 +604,23 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <tbody>
 <tr>
 <td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (official)</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1589751823-4807.mp4"/></audio></td>
 <td><audio controls="" ><source src="wav/audioclip-1591019077-14327.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-<td><strong>MelGAN + STFT-loss (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591019138-13015.mp4"/></audio></td>
 <td><audio controls="" ><source src="wavaudioclip-1591107052-16613.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>FB-MelGAN (ours)</strong></td>
-<td><strong>MB-MelGAN (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
@@ -637,23 +632,23 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 </tr>
 <tr>
 <td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (official)</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-<td><strong>MelGAN + STFT-loss (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>FB-MelGAN (ours)</strong></td>
-<td><strong>MB-MelGAN (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
@@ -665,23 +660,23 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 </tr>
 <tr>
 <td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (official)</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-<td><strong>MelGAN + STFT-loss (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
-<td><strong>FB-MelGAN (ours)</strong></td>
-<td><strong>MB-MelGAN (ours)</strong></td>
+<td><strong>Groundtruth</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
@@ -693,7 +688,7 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 </tr>
 <tr>
 <td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (official)</strong></td>
+<td><strong>SE-MelGAN</strong></td>
 </tr>
 <tr>
 <td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
@@ -702,88 +697,6 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <tr>
 <td></td>
 <td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="audio-samples-japanese">Audio samples (Japanese)</h2>
-<p>Audio sampels trained on <a href="https://sites.google.com/site/shinnosuketakamichi/publication/jsut">JSUT dataset</a>.<br>
-Note that groundtruth samples are 48 kHz and we downsampled to 24 kHz and we limit the frequency range from 80 to 7600 Hz in Mel spectrogram calculation.</p>
-<ul>
-<li><strong>Groundtruth</strong>: Target speech.</li>
-<li><strong>Parallel WaveGAN (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/jsut/voc1/conf/parallel_wavegan.v1.yaml">this config</a>.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/jsut/raw/BASIC5000_0001.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/jsut/kan-bayashi_wavegan.v1/BASIC5000_0001.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/jsut/raw/BASIC5000_0002.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/jsut/kan-bayashi_wavegan.v1/BASIC5000_0002.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/jsut/raw/BASIC5000_0003.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/jsut/kan-bayashi_wavegan.v1/BASIC5000_0003.wav"/></audio></td>
-</tr>
-</tbody>
-</table>
-<h2 id="audio-samples-mandarin">Audio samples (Mandarin)</h2>
-<p>Audio sampels trained on <a href="https://www.data-baker.com/open_source.html">CSMSC dataset</a>.<br>
-Note that groundtruth samples are 48 kHz and we downsampled to 24 kHz and we limit the frequency range from 80 to 7600 Hz in Mel spectrogram calculation.</p>
-<ul>
-<li><strong>Groundtruth</strong>: Target speech.</li>
-<li><strong>Parallel WaveGAN (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/csmsc/voc1/conf/parallel_wavegan.v1.yaml">this config</a>.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/csmsc/raw/009901.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/csmsc/kan-bayashi_wavegan.v1/009901.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/csmsc/raw/009902.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/csmsc/kan-bayashi_wavegan.v1/009902.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/csmsc/raw/009903.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/csmsc/kan-bayashi_wavegan.v1/009903.wav"/></audio></td>
 </tr>
 </tbody>
 </table>
