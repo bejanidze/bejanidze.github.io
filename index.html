@@ -5,19 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title> - Unofficial Parallel WaveGAN Implementation Demo</title>
-    
-    <meta name="description" content="Unofficial Parallel WaveGAN (&#43; MelGAN &amp; Multi-band MelGAN) implementation demo This is the demonstration page of UNOFFICIAL Parallel WaveGAN, MelGAN and Multi-band MelGAN implementations.
-Github: https://github.com/kan-bayashi/ParallelWaveGAN
-Audio samples (English) Here is the comparison in the analysis-synthesis condition using LJSpeech dataset.
-Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram calculation.
- Groundtruth: Target speech. Parallel WaveGAN (official): Official samples provided in the official demo HP.">
-    <meta name="author" content="">
-    
-    <meta name="generator" content="Hugo 0.70.0" />
-    
-    <link rel="alternate" type="application/atom+xml" href="https://github.com/bejanidze/bejanidze.github.io/blob/master/index.xml" title="Unofficial Parallel WaveGAN Implementation Demo">
-    
+    <title> SE-MelGAN - Multi-Speaker Language Agnostic Rapid Speech Enhancement </title>
+
     <style>
         /*
  * Paper
@@ -601,19 +590,14 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
     <h1 class="post-title"></h1>
     <div class="post-meta">November 5, 2019</div>
   </header>
-  <div class="post-content"><h1 id="unofficial-parallel-wavegan--melgan--multi-band-melgan-implementation-demo">Unofficial Parallel WaveGAN (+ MelGAN &amp; Multi-band MelGAN) implementation demo</h1>
-<p>This is the demonstration page of <strong>UNOFFICIAL</strong> Parallel WaveGAN, MelGAN and Multi-band MelGAN implementations.</p>
-<p>Github: <a href="https://github.com/kan-bayashi/ParallelWaveGAN">https://github.com/kan-bayashi/ParallelWaveGAN</a></p>
+  <div class="post-content"><h1 id="unofficial-parallel-wavegan--melgan--multi-band-melgan-implementation-demo">SE-MelGAN - Multi-Speaker Language Agnostic Rapid Speech Enhancement</h1>
+<p>This is the demonstration page of SE-MelGAN - Multi-Speaker Language Agnostic Rapid Speech Enhancement</p>
+<p>Github: <a href="https://github.com/">https://github.com/</a></p>
 <h2 id="audio-samples-english">Audio samples (English)</h2>
 <p>Here is the comparison in the analysis-synthesis condition using <a href="https://keithito.com/LJ-Speech-Dataset/">LJSpeech dataset</a>.<br>
 Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram calculation.</p>
 <ul>
 <li><strong>Groundtruth</strong>: Target speech.</li>
-<li><strong>Parallel WaveGAN (official)</strong>: Official samples provided in <a href="https://r9y9.github.io/demos/projects/icassp2020">the official demo HP</a>.</li>
-<li><strong>Parallel WaveGAN (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/ljspeech/voc1/conf/parallel_wavegan.v1.yaml">this config</a>.</li>
-<li><strong>MelGAN + STFT-loss (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/ljspeech/voc1/conf/melgan.v3.long.yaml">this config</a>.</li>
-<li><strong>FB-MelGAN (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/ljspeech/voc1/conf/full_band_melgan.v1.yaml">this config</a>.</li>
-<li><strong>MB-MelGAN (ours)</strong>: Our samples based <a href="https://github.com/kan-bayashi/ParallelWaveGAN/blob/master/egs/ljspeech/voc1/conf/multi_band_melgan.v1.yaml">this config</a>.</li>
 </ul>
 <table>
 <thead>
@@ -628,24 +612,24 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <td><strong>ParallelWaveGAN (official)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/raw/LJ050-0029.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/r9y9_wavegan/LJ050-0029.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1589751823-4807.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591019077-14327.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>ParallelWaveGAN (ours)</strong></td>
 <td><strong>MelGAN + STFT-loss (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_wavegan/LJ050-0029.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_melgan/LJ050-0029.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591019138-13015.mp4"/></audio></td>
+<td><audio controls="" ><source src="wavaudioclip-1591107052-16613.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>FB-MelGAN (ours)</strong></td>
 <td><strong>MB-MelGAN (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_fb-melgan/LJ050-0029.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_mb-melgan/LJ050-0029.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td></td>
@@ -656,24 +640,24 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <td><strong>ParallelWaveGAN (official)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/raw/LJ050-0030.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/r9y9_wavegan/LJ050-0030.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>ParallelWaveGAN (ours)</strong></td>
 <td><strong>MelGAN + STFT-loss (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_wavegan/LJ050-0030.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_melgan/LJ050-0030.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>FB-MelGAN (ours)</strong></td>
 <td><strong>MB-MelGAN (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_fb-melgan/LJ050-0030.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_mb-melgan/LJ050-0030.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td></td>
@@ -684,24 +668,24 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <td><strong>ParallelWaveGAN (official)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/raw/LJ050-0031.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/r9y9_wavegan/LJ050-0031.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>ParallelWaveGAN (ours)</strong></td>
 <td><strong>MelGAN + STFT-loss (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_wavegan/LJ050-0031.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_melgan/LJ050-0031.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td><strong>FB-MelGAN (ours)</strong></td>
 <td><strong>MB-MelGAN (ours)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_fb-melgan/LJ050-0031.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_mb-melgan/LJ050-0031.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td></td>
@@ -712,52 +696,12 @@ Note that we limit the frequency range from 80 to 7600 Hz in Mel spectrogram cal
 <td><strong>ParallelWaveGAN (official)</strong></td>
 </tr>
 <tr>
-<td><audio controls="" ><source src="wav/ljspeech/raw/LJ050-0032.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/r9y9_wavegan/LJ050-0032.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-<td><strong>MelGAN + STFT-loss (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_wavegan/LJ050-0032.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_melgan/LJ050-0032.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>FB-MelGAN (ours)</strong></td>
-<td><strong>MB-MelGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_fb-melgan/LJ050-0032.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_mb-melgan/LJ050-0032.wav"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
+<td><audio controls="" ><source src="wav/audioclip-1591107137-16213.mp4"/></audio></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td><strong>Groundtruth</strong></td>
-<td><strong>ParallelWaveGAN (official)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/ljspeech/raw/LJ050-0033.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/r9y9_wavegan/LJ050-0033.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>ParallelWaveGAN (ours)</strong></td>
-<td><strong>MelGAN + STFT-loss (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_wavegan/LJ050-0033.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_melgan/LJ050-0033.wav"/></audio></td>
-</tr>
-<tr>
-<td><strong>FB-MelGAN (ours)</strong></td>
-<td><strong>MB-MelGAN (ours)</strong></td>
-</tr>
-<tr>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_fb-melgan/LJ050-0033.wav"/></audio></td>
-<td><audio controls="" ><source src="wav/ljspeech/kan-bayashi_mb-melgan/LJ050-0033.wav"/></audio></td>
 </tr>
 </tbody>
 </table>
